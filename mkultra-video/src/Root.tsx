@@ -16,7 +16,7 @@ const totalSeconds =
   NUM_TITLE_CARDS * TITLE_CARD_SECONDS +
   sceneDuration;
 
-const estimatedOverlap = 25;
+const estimatedOverlap = 47;
 const adjustedSeconds = totalSeconds - estimatedOverlap;
 const totalFrames = Math.ceil(adjustedSeconds * VIDEO.fps);
 
@@ -32,7 +32,7 @@ export const RemotionRoot: React.FC = () => {
         width={VIDEO.width}
         height={VIDEO.height}
       />
-      {/* Full render with audio — requires voiceover.mp3 and music.mp3 in public/audio/ */}
+      {/* Full render with audio — requires voiceover.mp3 in public/audio/ */}
       <Composition
         id="MKUltraDoc"
         component={MKUltraDoc}

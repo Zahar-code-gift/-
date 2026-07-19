@@ -93,11 +93,8 @@ export const MKUltraDoc: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: COLORS.bgDark }}>
       <TransitionSeries>{elements}</TransitionSeries>
 
-      {/* Voiceover narration — place your audio file at public/audio/voiceover.mp3 */}
+      {/* Voiceover narration */}
       <Audio src={staticFile("audio/voiceover.mp3")} volume={1} />
-
-      {/* Background music — place your audio file at public/audio/music.mp3 */}
-      <Audio src={staticFile("audio/music.mp3")} volume={0.15} />
     </AbsoluteFill>
   );
 };
