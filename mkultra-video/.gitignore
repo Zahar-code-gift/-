@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+.env
+*.mp4
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Audio files (too large for git — add locally)
+public/audio/*.mp3
+public/audio/*.wav
+
+# Generator script output
+generate-images.mjs
